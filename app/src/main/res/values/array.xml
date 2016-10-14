@@ -3,6 +3,5 @@
     <string-array name="languages">
         <item>eng</item>
         <item>chi_sim</item>
-        <item>chi_tra</item>
     </string-array>
 </resources>
