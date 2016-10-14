@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.joe.eyer.activity.MainActivity">
+
+    <android.support.constraint.Guideline
+        android:id="@+id/divider"
+        android:layout_width="411dp"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.66536206"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="438dp" />
+
+    <TextureView
+        android:id="@+id/surface_camera"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/divider"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/open_camera"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#605b5b"
+        android:gravity="center"
+        android:text="@string/click_to_open_camera"
+        android:textColor="#ffffff"
+        app:layout_constraintBottom_toTopOf="@+id/divider"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/btn_set"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:clickable="true"
+        app:fabSize="auto"
+        app:layout_constraintBottom_toTopOf="@+id/divider"
+        app:layout_constraintRight_toRightOf="@+id/surface_camera"
+        app:layout_constraintTop_toTopOf="@+id/divider"
+        app:srcCompat="@drawable/ic_settings_white_36dp" />
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#f09b35"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/divider"
+        app:layout_constraintVertical_bias="0.0">
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/img_take_capture"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/shape_button_border"
+            android:visibility="gone"
+            app:srcCompat="@drawable/ic_camera_alt_white_48dp" />
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

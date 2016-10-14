@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Eyer</string>
+    <string name="click_to_open_camera">点击此处打开相机</string>
+    <string name="language_decode">解析包管理</string>
+    <string name="about">关于</string>
+    <string name="set">设置</string>
+</resources>
