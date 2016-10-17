@@ -4,4 +4,9 @@
         <item>eng</item>
         <item>chi_sim</item>
     </string-array>
+
+    <string-array name="languages_data_url">
+        <item>https://raw.githubusercontent.com/1030310877/Eyer/master/language_data/eng.zip</item>
+        <item>https://raw.githubusercontent.com/1030310877/Eyer/master/language_data/chi_sim.zip</item>
+    </string-array>
 </resources>

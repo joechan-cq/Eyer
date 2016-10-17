@@ -4,4 +4,5 @@
     <string name="language_decode">解析包管理</string>
     <string name="about">关于</string>
     <string name="set">设置</string>
+    <string name="stop">取消</string>
 </resources>

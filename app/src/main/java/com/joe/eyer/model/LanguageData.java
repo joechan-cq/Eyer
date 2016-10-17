@@ -9,6 +9,8 @@ public class LanguageData {
     private String name;
     private boolean isDownloaded;
     private boolean isEnable;
+    private boolean isDownloading;
+    private int downloadProgress;
 
     public String getName() {
         return name;
@@ -26,6 +28,14 @@ public class LanguageData {
         isDownloaded = downloaded;
     }
 
+    public boolean isDownloading() {
+        return isDownloading;
+    }
+
+    public void setDownloading(boolean downloading) {
+        isDownloading = downloading;
+    }
+
     public boolean isEnable() {
         return isEnable;
     }
@@ -33,4 +43,13 @@ public class LanguageData {
     public void setEnable(boolean enable) {
         isEnable = enable;
     }
+
+    public int getDownloadProgress() {
+        return downloadProgress;
+    }
+
+    public void setDownloadProgress(int downloadProgress) {
+        this.downloadProgress = downloadProgress;
+    }
+
 }

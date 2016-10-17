@@ -26,7 +26,7 @@ public class ZipUtils {
      * @param outPathString path to be unZIP
      * @throws Exception
      */
-    public static void UnZipFolder(String zipFileString, String outPathString) throws Exception {
+    public static void unZipFolder(String zipFileString, String outPathString) throws Exception {
         ZipInputStream inZip = new ZipInputStream(new FileInputStream(zipFileString));
         ZipEntry zipEntry;
         String szName = "";
@@ -54,7 +54,6 @@ public class ZipUtils {
                 out.close();
             }
         }
-        System.out.println("ssssss");
         inZip.close();
     }
 
@@ -123,7 +122,7 @@ public class ZipUtils {
      * @return InputStream
      * @throws Exception
      */
-    public static InputStream UpZip(String zipFileString, String fileString) throws Exception {
+    public static InputStream unZipInputStream(String zipFileString, String fileString) throws Exception {
         ZipFile zipFile = new ZipFile(zipFileString);
         ZipEntry zipEntry = zipFile.getEntry(fileString);
         return zipFile.getInputStream(zipEntry);

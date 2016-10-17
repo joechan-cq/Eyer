@@ -14,4 +14,11 @@
     <style name="ToolbarTheme" parent="ThemeOverlay.AppCompat.ActionBar">
         <!--<item name="android:background">@color/turquoise</item>-->
     </style>
+
+    <style name="BaseDialog" parent="Base.Theme.AppCompat.Dialog">
+        <item name="android:windowActionBar">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
 </resources>

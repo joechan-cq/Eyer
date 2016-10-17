@@ -212,6 +212,9 @@ public class CameraCompatUtil {
                         }
                     }
                 }, mHandler);
+                CaptureRequest.Builder builder = cameraDevice.createCaptureRequest(CameraDevice.TEMPLATE_STILL_CAPTURE);
+                builder.set(CaptureRequest.CONTROL_AF_MODE, CaptureRequest.CONTROL_AF_MODE_CONTINUOUS_PICTURE);
+                builder.set(CaptureRequest.CONTROL_AE_MODE, CaptureRequest.CONTROL_AE_MODE_ON_AUTO_FLASH);
                 builder.addTarget(imageReader.getSurface());
                 builder.set(CaptureRequest.JPEG_ORIENTATION, 90);
                 mSession.capture(builder.build(), null, mHandler);

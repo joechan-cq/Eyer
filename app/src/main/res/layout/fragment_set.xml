@@ -15,7 +15,7 @@
         android:background="#FFFFFF"
         android:padding="16dp">
 
-        <TextView
+        <android.support.v7.widget.AppCompatTextView
             android:id="@+id/tv_temp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -25,7 +25,7 @@
             android:text="@string/language_decode"
             android:textSize="20sp" />
 
-        <TextView
+        <android.support.v7.widget.AppCompatTextView
             android:id="@+id/tv_choose_mode"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -35,7 +35,7 @@
             tool:text="未选" />
     </RelativeLayout>
 
-    <TextView
+    <android.support.v7.widget.AppCompatTextView
         android:id="@+id/tv_set_about"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
