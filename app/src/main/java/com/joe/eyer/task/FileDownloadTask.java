@@ -79,7 +79,7 @@ public class FileDownloadTask {
                     return;
                 }
                 if (!isResume) {
-                    dataFile.deleteOnExit();
+                    dataFile.delete();
                 }
                 try {
                     if (!dataFile.exists()) {
